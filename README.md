@@ -1,2 +1,2 @@
 # Keccak
-Keccak算法，被NIST选为SHA3算法。
+Keccak算法，被NIST选为<SHA-3>算法。
