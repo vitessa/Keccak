@@ -36,7 +36,7 @@ namespace vitessa
     {
     public:
             /*
-             * @hash   向线程池中添加任务，线程安全
+             * @hash   安全哈希散列
              *     \in       输入数据
              *     \inlen    输入数据的长度
              *     \md       输出数据
