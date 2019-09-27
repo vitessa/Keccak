@@ -130,7 +130,7 @@ namespace vitessa
         {
             return (lhs << rhs) | (lhs >> (64 - rhs));
         }
-        
+
         static void keccakf(uint64_t st[25], int rounds)
         {
             int i, j, round;
