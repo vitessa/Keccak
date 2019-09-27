@@ -67,22 +67,22 @@ namespace vitessa
             return retval;
         }
 
-            /*
-             * @hash   安全哈希散列
-             *     \in       输入数据
-             *     \inlen    输入数据的长度
-             *     \md       输出数据
-             *     \mdlen    输出数据的长度
-             *     \iterate  重载参数，增加函数迭代次数
-             *
-             ********************************************************************
-             *
-             * @note mdlen说明
-             *     \224 bits  ---  28
-             *     \256 bits  ---  32
-             *     \384 bits  ---  48
-             *     \512 bits  ---  64
-             */
+        /*
+         * @hash   安全哈希散列
+         *     \in       输入数据
+         *     \inlen    输入数据的长度
+         *     \md       输出数据
+         *     \mdlen    输出数据的长度
+         *     \iterate  重载参数，增加函数迭代次数
+         *
+         ********************************************************************
+         *
+         * @note mdlen说明
+         *     \224 bits  ---  28
+         *     \256 bits  ---  32
+         *     \384 bits  ---  48
+         *     \512 bits  ---  64
+         */
         static void hash(const unsigned char* in, int inlen, unsigned char* md, int mdlen)
         {
             uint64_t st[25];
