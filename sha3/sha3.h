@@ -1,5 +1,5 @@
-#ifndef __KECCAK_H__
-#define __KECCAK_H__
+#ifndef __SHA3_H__
+#define __SHA3_H__
 
 #include <cstring>
 #include <cstdint>
