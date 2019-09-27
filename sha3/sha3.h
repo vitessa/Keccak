@@ -35,6 +35,38 @@ namespace vitessa
     class sha3
     {
     public:
+        template<typename T>
+        static std::array<unsigned char, 28> sum224(T* in, int inlen)
+        {
+            std::array<unsigned char, 28> retval;
+            sha3::hash((unsigned char*)in, inlen, retval.data(), 28);
+            return retval;
+        }
+
+        template<typename T>
+        static std::array<unsigned char, 32> sum256(T* in, int inlen)
+        {
+            std::array<unsigned char, 32> retval;
+            sha3::hash((unsigned char*)in, inlen, retval.data(), 32);
+            return retval;
+        }
+
+        template<typename T>
+        static std::array<unsigned char, 48> sum384(T* in, int inlen)
+        {
+            std::array<unsigned char, 48> retval;
+            sha3::hash((unsigned char*)in, inlen, retval.data(), 48);
+            return retval;
+        }
+
+        template<typename T>
+        static std::array<unsigned char, 64> sum512(T* in, int inlen)
+        {
+            std::array<unsigned char, 64> retval;
+            sha3::hash((unsigned char*)in, inlen, retval.data(), 64);
+            return retval;
+        }
+
             /*
              * @hash   安全哈希散列
              *     \in       输入数据
