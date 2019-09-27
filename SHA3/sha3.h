@@ -32,7 +32,7 @@ namespace vitessa
         15, 23, 19, 13, 12,  2, 20, 14, 22,  9,  6,  1,
     };
 
-    class keccak
+    class sha3
     {
     public:
             /*
