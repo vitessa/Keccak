@@ -3,6 +3,7 @@
 
 #include <cstring>
 #include <cstdint>
+#include <array>
 
 namespace vitessa
 {
